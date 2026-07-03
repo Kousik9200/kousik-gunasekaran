@@ -832,7 +832,7 @@ footer {
           <div class="panel-title">Sys.Info</div>
           <ul class="info-list">
             <li><span class="lbl">LOCATION</span><span class="val">New York, NY 10016</span></li>
-            <li><span class="lbl">DEGREE</span><span class="val">M.S. Cybersecurity (Expected May 2026)</span></li>
+            <li><span class="lbl">DEGREE</span><span class="val">M.S. Cybersecurity (Aug 2024 – May 2026)</span></li>
             <li><span class="lbl">UNIVERSITY</span><span class="val">Yeshiva University, Katz School</span></li>
             <li><span class="lbl">GPA</span><span class="val">3.9 / 4.0</span></li>
             <li><span class="lbl">CERTS</span><span class="val">CISSP · Security+ · CCNA · M365 Defender</span></li>
@@ -941,14 +941,15 @@ footer {
 
       <div class="job">
         <div class="job-meta">
-          <div class="job-role">Cybersecurity Architecture Intern</div>
-          <div class="job-date">JAN 2026 — PRESENT</div>
+          <div class="job-role">Cybersecurity Architect</div>
+          <div class="job-date">SEP 2025 — MAY 2026</div>
         </div>
-        <div class="job-company">Peblink / Gennisi Group — Berbera Logistics Chain (Trade Track)</div>
+        <div class="job-company">Peblink</div>
         <ul class="job-bullets">
-          <li>Designing cybersecurity architecture for an RFID/GPS-based Cyber-Physical Tracking System for the Berbera logistics corridor.</li>
-          <li>Developing security controls for IoT sensor networks, edge computing nodes, and cloud data pipelines handling real-time cargo telemetry.</li>
-          <li>Conducting threat modeling and risk assessments across the full supply chain attack surface.</li>
+          <li>Conducted threat modeling and architecture reviews across cloud environments; identified security vulnerabilities across web and cloud layers, reducing attack surface by 20%.</li>
+          <li>Built automated fraud detection and anomaly alerting pipelines integrating behavioral analytics with SIEM; improved mean time to detect malicious activity by 15%.</li>
+          <li>Implemented IAM controls and secrets management policies across AWS, Azure, and GCP; enforced least-privilege access and secure SDLC guardrails using GitHub Actions and Terraform.</li>
+          <li>Developed Python automation scripts for vulnerability scanning, SAST analysis, and security testing workflows—reducing manual security overhead by 30%.</li>
         </ul>
       </div>
 
@@ -1003,7 +1004,7 @@ footer {
     <!-- ── PROJECTS TAB ── -->
     <div class="tab-pane active" id="tab-projects">
       <div class="proj-filters">
-        <button class="proj-filter active" onclick="filterProjects('all', this)">All (11)</button>
+        <button class="proj-filter active" onclick="filterProjects('all', this)">All (15)</button>
         <button class="proj-filter" onclick="filterProjects('detection', this)">Detection &amp; SIEM</button>
         <button class="proj-filter" onclick="filterProjects('cloud', this)">Cloud Security</button>
         <button class="proj-filter" onclick="filterProjects('ai', this)">AI &amp; Automation</button>
@@ -1206,6 +1207,90 @@ footer {
           <a href="https://github.com/Kousik9200/Projects/tree/main/Agentic_Job_Search_Automation" target="_blank" class="proj-gh">&#60;/&#62; View on GitHub &rarr;</a>
         </div>
 
+
+        <!-- P-012: Fraud Detection & Real-time Abuse Monitoring Pipeline -->
+        <div class="proj-card" data-cat="detection">
+          <div class="proj-accent red"></div>
+          <div class="proj-num">// P-012</div>
+          <div class="proj-title">Fraud Detection &amp; Abuse Monitoring Pipeline</div>
+          <p class="proj-desc">
+            Automated fraud detection pipeline using Python and behavioral analytics to identify credential stuffing, account takeover, and anomalous payment activity in real time. Integrates with SIEM for live alerting; behavioral scoring engine flags high-risk sessions with configurable thresholds and auto-triage workflows.
+          </p>
+          <div class="proj-badges">
+            <span class="proj-badge">Payments Security</span>
+            <span class="proj-badge">Real-time</span>
+          </div>
+          <div class="proj-stack">
+            <span class="tag">Python</span><span class="tag red">Fraud Detection</span>
+            <span class="tag purple">Behavioral Analytics</span><span class="tag amber">SIEM</span>
+            <span class="tag green">Anomaly Detection</span><span class="tag">FastAPI</span>
+            <span class="tag">Account Takeover Prevention</span>
+          </div>
+          <a href="https://github.com/Kousik9200/Projects/tree/main/Fraud_Detection_Abuse_Monitoring_Pipeline" target="_blank" class="proj-gh">&#60;/&#62; View on GitHub &rarr;</a>
+        </div>
+
+        <!-- P-013: Cloud Security Hardening & Vulnerability Management Framework -->
+        <div class="proj-card" data-cat="cloud">
+          <div class="proj-accent"></div>
+          <div class="proj-num">// P-013</div>
+          <div class="proj-title">Cloud Security Hardening &amp; Vuln Management Framework</div>
+          <p class="proj-desc">
+            Automated vulnerability scanning, IAM policy enforcement, and secrets management framework across AWS and Azure. Python-driven scanner flags misconfigured roles, exposed secrets, and open attack surface; Terraform + GitHub Actions enforce least-privilege guardrails in CI/CD and generate remediation reports per finding.
+          </p>
+          <div class="proj-badges">
+            <span class="proj-badge">Multi-cloud</span>
+            <span class="proj-badge">IaC-driven</span>
+          </div>
+          <div class="proj-stack">
+            <span class="tag amber">AWS</span><span class="tag purple">Azure</span>
+            <span class="tag">Python</span><span class="tag green">Terraform</span>
+            <span class="tag">GitHub Actions</span><span class="tag red">IAM Hardening</span>
+            <span class="tag">Secrets Management</span><span class="tag">Nessus</span>
+          </div>
+          <a href="https://github.com/Kousik9200/Projects/tree/main/Cloud_Security_Hardening_Vuln_Management" target="_blank" class="proj-gh">&#60;/&#62; View on GitHub &rarr;</a>
+        </div>
+
+        <!-- P-014: GRC Automation & Continuous Compliance Pipeline -->
+        <div class="proj-card" data-cat="cloud">
+          <div class="proj-accent purple"></div>
+          <div class="proj-num">// P-014</div>
+          <div class="proj-title">GRC Automation &amp; Continuous Compliance Pipeline</div>
+          <p class="proj-desc">
+            Continuous compliance pipeline automating SOC 2 control evidence collection and validation using Python and GitHub Actions. KQL-powered control health monitoring integrates with SIEM to track control posture in real time; automated evidence packages eliminate manual audit prep and surface control gaps before audit windows.
+          </p>
+          <div class="proj-badges">
+            <span class="proj-badge">SOC 2</span>
+            <span class="proj-badge">Audit-ready</span>
+          </div>
+          <div class="proj-stack">
+            <span class="tag">Python</span><span class="tag green">GitHub Actions</span>
+            <span class="tag purple">KQL</span><span class="tag amber">SIEM</span>
+            <span class="tag">SOC 2 / HIPAA</span><span class="tag red">Compliance Automation</span>
+            <span class="tag">Logic Apps</span><span class="tag">Drata</span>
+          </div>
+          <a href="https://github.com/Kousik9200/Projects/tree/main/GRC_Automation_Compliance_Pipeline" target="_blank" class="proj-gh">&#60;/&#62; View on GitHub &rarr;</a>
+        </div>
+
+        <!-- P-015: Security Guardrails & Policy Enforcement Framework -->
+        <div class="proj-card" data-cat="cloud architecture">
+          <div class="proj-accent amber"></div>
+          <div class="proj-num">// P-015</div>
+          <div class="proj-title">Security Guardrails &amp; Policy Enforcement Framework</div>
+          <p class="proj-desc">
+            Machine-enforceable security guardrails deployed as code across AWS, Azure, and GCP using Terraform and GitHub Actions. Policy-as-code engine blocks non-compliant infrastructure before deployment; automated compliance reporting surfaces violations by control family (NIST CSF, CIS, SOC 2) with remediation playbooks.
+          </p>
+          <div class="proj-badges">
+            <span class="proj-badge">Policy-as-Code</span>
+            <span class="proj-badge">Multi-cloud</span>
+          </div>
+          <div class="proj-stack">
+            <span class="tag green">Terraform</span><span class="tag">GitHub Actions</span>
+            <span class="tag amber">AWS</span><span class="tag purple">Azure</span>
+            <span class="tag">GCP</span><span class="tag red">OPA / Sentinel</span>
+            <span class="tag">NIST CSF</span><span class="tag">CI/CD Security</span>
+          </div>
+          <a href="https://github.com/Kousik9200/Projects/tree/main/Security_Guardrails_Policy_Enforcement" target="_blank" class="proj-gh">&#60;/&#62; View on GitHub &rarr;</a>
+        </div>
       </div>
     </div>
 
@@ -1433,7 +1518,7 @@ footer {
         <div class="edu-loc">NEW YORK, USA</div>
         <div class="edu-meta">
           <span class="edu-pill gpa">GPA: 3.9</span>
-          <span class="edu-pill date">Expected May 2026</span>
+          <span class="edu-pill date">Aug 2024 – May 2026</span>
         </div>
       </div>
       <div class="edu-card">
